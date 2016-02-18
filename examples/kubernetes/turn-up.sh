@@ -15,6 +15,10 @@
 # limitations under the License.
 ###############################################################################
 
+# gcloud compute disks create --size 10GB mysql-disk
+gcloud container clusters create hello-world
+gcloud container clusters get-credentials hello-world
+
 kubectl create -f mysql.yaml
 kubectl create -f mysql-service.yaml
 kubectl create -f guestbookservice-controller.yaml

@@ -45,3 +45,6 @@ kubectl delete replicationcontrollers guestbookservice-controller-latest
 
 kubectl delete services mysql
 kubectl delete pods mysql
+
+gcloud container clusters delete hello-world
+# gcloud compute disks delete mysql-disk
